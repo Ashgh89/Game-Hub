@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-  // 7. In rawg -> API -> Read documentation -> scroll down to fined -> GET /games and copy it
+  // 7. In rawg -> API -> Read documentation -> scroll down to fined ->
+  // GET /games and copy it
   baseURL: "https://api.rawg.io/api",
   params: {
     key: "df7ce21b6f384dbf840a061794936eda",
@@ -16,4 +17,4 @@ export default axios.create({
 // 5. In src folder -> New Folder and call it -> services
 // 6. In services -> Add New File -> api-client.ts
 
-// 8. Now create a new component in components -> GameGrid.tsx
+// 8. Now create a new component in components -> GameGrid.tsx (Next PIC)
