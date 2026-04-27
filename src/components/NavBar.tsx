@@ -1,11 +1,17 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/logo.webp";
+import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
+  // HStack: It stands for Horizontal Stack.
+  // It puts items next to each other in a row (left → right)
+  // It also adds spacing between them automatically
   return (
-    <HStack>
+    <HStack justifyContent="space-between">
       <Image src={logo} boxSize="60px" />
-      <Text>NavBar</Text>
+      <ColorModeSwitch />
     </HStack>
   );
 };
 export default NavBar;
+
+// 1. First create a file in components and name it NavBar.tsx
